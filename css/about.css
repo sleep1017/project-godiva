@@ -1,0 +1,755 @@
+/* -------------GOOGLE FONT------------- */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+/* font-family: 'Cinzel', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* ------------어썸 폰트-----------------*/
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
+/* --------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+.wrap {
+  background: linear-gradient(to right, #f9f9f9, #f1eac9);
+  width: 100%;
+  height: 580vh;
+}
+
+/* ---------------NAV---------------- */
+nav {
+  z-index: 100;
+  position: fixed;
+  background: #000;
+  width: 100%;
+  height: 150px;
+}
+.nav__wrap {
+  background: #000;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Cinzel", serif;
+  width: 1300px;
+  height: 150px;
+}
+.logo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.logo video {
+  position: absolute;
+  left: -150px;
+  top: -50px;
+  width: 450px;
+}
+.nav__wrap ul {
+  line-height: 50px;
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__wrap ul a {
+  display: block;
+  font-size: 1rem;
+  color: #d5a01f;
+}
+.nav__wrap ul a.active {
+  color: #f2e0a2;
+  text-shadow: 0 0 10px #f2e0a2;
+}
+
+.nav__wrap ul a:hover {
+  color: #f2e0a2;
+  text-shadow: 0 0 10px #f2e0a2;
+}
+.social-link {
+  line-height: 50px;
+  height: 50px;
+  width: 8%;
+  justify-content: space-between;
+  display: flex;
+}
+.social-link a {
+  display: block;
+  font-size: 1.2rem;
+  color: #d5a01f;
+}
+.social-link a:hover {
+  transform: scale(1.2);
+  color: #f2e0a2;
+  text-shadow: 0 0 10px #f2e0a2;
+}
+.nav__line {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #f2e0a2, #d5a01f, #f3c21e);
+}
+/* ---------------NAV END---------------- */
+/* ---------------ABOUT GODIVA---------------- */
+.about {
+  padding-top: 150px;
+
+  width: 100%;
+  height: 100vh;
+}
+/* ---------------about-text---------------- */
+.about-text {
+  padding-top: 30px;
+
+  margin: auto;
+
+  width: 1300px;
+  height: 120px;
+}
+.about-text h1 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+}
+.about-text p {
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.8rem;
+  color: #707070;
+}
+
+/* ---------------about-menu end---------------- */
+.about__wrap {
+  width: 1300px;
+  margin: auto;
+  height: auto;
+}
+article {
+  width: 100%;
+  height: auto;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* ---------------lady godiva---------------- */
+
+.lady > h1 {
+  margin-left: -20px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #d5a01f;
+}
+.lady p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  letter-spacing: -0.1px;
+}
+.lady p:nth-child(3) {
+  margin-bottom: 30px;
+}
+.lady__flex {
+  display: flex;
+  width: 100%;
+  height: 523px;
+}
+/* ---------------lady left----------------- */
+.lady__left {
+  width: 50%;
+  height: 100%;
+}
+.lady__left ul {
+  position: relative;
+}
+.lady__left ul li {
+  position: absolute;
+}
+.lady__left ul li:first-child {
+  z-index: 10;
+}
+.lady__left img {
+  display: block;
+  vertical-align: top;
+}
+.lady__left h1 {
+  margin: 30px 0 40px -15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #d5a01f;
+}
+.lady__left p {
+  margin: 25px 25px 25px 0;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* ---------------lady left end------------- */
+/* ---------------lady right---------------- */
+.lady__right {
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.about .lady .lady__right h1 {
+  margin: 0 0 40px 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #d5a01f;
+}
+.about .lady .lady__right p {
+  margin: 25px 0 0 25px;
+  font-size: 1rem;
+  text-align: justify;
+}
+.lady__right video {
+  height: 100%;
+  position: absolute;
+
+  left: -140px;
+}
+/* ---------------lady right end----------------*/
+/* ---------------lady godiva end---------------*/
+/* ---------------history ----------------------*/
+.history {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.prev,
+.next {
+  text-align: center;
+  cursor: pointer;
+  z-index: 50;
+  position: absolute;
+}
+.prev:hover .fas,
+.next:hover .fas {
+  color: #d5a01f;
+}
+.prev {
+  left: -80px;
+}
+.next {
+  right: -80px;
+}
+.history .fas {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 10px gray;
+}
+.history-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.history .history-slide .slide {
+  display: flex;
+
+  box-shadow: 0 0 10px #7070707c;
+  margin-top: 150px;
+  width: 100%;
+  height: 700px;
+  background-color: white;
+}
+.history .history-slide .slide:first-child {
+  z-index: 80;
+}
+.history .history-slide .slide:nth-child(2) {
+  display: none;
+}
+.history .history-slide .slide:nth-child(3) {
+  display: none;
+}
+/* ----------------slide1------------------------------- */
+.history .history-slide .slide .left {
+  width: 50%;
+  height: 100%;
+  background: url("../img/history-bg.png") no-repeat;
+}
+.history .history-slide .slide .left h1 {
+  margin: 40px 0 40px 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: #d5a01f;
+}
+.history .history-slide .slide .left h2 {
+  margin: 0 0 0 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #d5a01f;
+}
+.history .history-slide .slide .left p {
+  text-align: justify;
+  width: 80%;
+  color: #f2e0a2;
+  margin: 40px 0 0 40px;
+}
+.history .history-slide .slide .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+/* 1937 */
+.history .history-slide .slide .right .y1937,
+.history .history-slide .slide .right .y1926 {
+  width: 90%;
+  height: 150px;
+  display: flex;
+}
+.y1937-left {
+  width: 401px;
+  height: 100%;
+}
+.y1937-left p {
+  padding-right: 10px;
+  text-align: justify;
+}
+.y1937-right {
+  width: 184px;
+  height: 100%;
+  background: url("../img/1926-family.png") no-repeat;
+}
+/* 1926 */
+
+.y1926-left {
+  width: 218px;
+  height: 100%;
+  background: url("../img/1926.png") no-repeat;
+}
+.y1926-right {
+  width: 375px;
+}
+.y1926-right p {
+  padding-left: 10px;
+  text-align: justify;
+}
+.history .history-slide .slide .right .center-bg {
+  background: url("../img/history1.png") no-repeat;
+  width: 100%;
+  height: 120px;
+  margin: 20px 0;
+}
+.center-bg ul li {
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+
+  color: white;
+}
+.center-bg ul li:first-child {
+  margin-left: 475px;
+}
+.center-bg ul li:nth-child(2) {
+  margin-left: 85px;
+  margin-top: 30px;
+}
+/* ----------------slide1 end------------------ */
+/* ----------------slide2 --------------------- */
+.slide-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide-wrap__top {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+}
+/* ------1946------ */
+.history .history-slide .slide .slide-wrap .slide-wrap__top .y1946 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.y1946-left {
+  width: 60%;
+}
+.y1946-left p {
+  padding-left: 30px;
+  text-align: justify;
+}
+.y1946-right {
+  width: 225px;
+  height: 100%;
+  background: url("../img/1946.png") no-repeat;
+}
+/* ------1968------ */
+.history .history-slide .slide .slide-wrap .slide-wrap__top .y1968 {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.y1968-left {
+  width: 75%;
+}
+.y1968-left p {
+  padding-left: 30px;
+  text-align: justify;
+}
+.y1968-right {
+  margin: 0 30px;
+  background: url("../img/1968.png") no-repeat;
+  width: 112px;
+  height: 100%;
+}
+.slide-wrap__center {
+  background: url("../img/history2.png") no-repeat;
+
+  margin: 20px 0;
+  width: 100%;
+  height: 120px;
+}
+.slide-wrap__center ul {
+  margin-left: 490px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.slide-wrap__center ul:nth-child(2) {
+  margin: 30px 0 0 90px;
+  width: 55%;
+}
+.slide-wrap__center ul li {
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+  color: white;
+}
+.slide-wrap__bottom {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+/* ------1945------ */
+.history .history-slide .slide .slide-wrap .slide-wrap__bottom .y1945 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.y1945-left {
+  margin-left: 30px;
+  background: url("../img/1945.png") no-repeat;
+  width: 224px;
+  height: 100%;
+}
+.y1945-right {
+  width: calc(100% - 254px);
+}
+.y1945-right p {
+  padding-left: 30px;
+  text-align: justify;
+}
+/* ------1958------ */
+.history .history-slide .slide .slide-wrap .slide-wrap__bottom .y1958 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.y1958-left {
+  margin-left: 30px;
+  background: url("../img/1958.png") no-repeat;
+  width: 151px;
+  height: 100%;
+}
+.y1958-right {
+  width: calc(100% - 181px);
+}
+.y1958-right p {
+  padding: 0 30px;
+  text-align: justify;
+}
+/* ----------------slide2 end------------------ */
+/* ----------------slide3 --------------------- */
+.slide-wrap__top1 {
+  width: 100%;
+  height: 150px;
+}
+/* ------2012------ */
+.history .history-slide .slide .slide-wrap .slide-wrap__top1 .y2012 {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.y2012-left {
+  width: calc(100% - 350px);
+}
+.y2012-left p {
+  padding: 0 30px;
+}
+.y2012-right {
+  margin-right: 50px;
+  background: url("../img/2012.png") no-repeat;
+  width: 300px;
+  height: 100%;
+}
+
+.slide-wrap__center1 {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+}
+.slide-wrap__center1 .center-left {
+  width: 900px;
+  height: 120px;
+  background: url("../img/history3.png") no-repeat;
+}
+.slide-wrap__center1 .center-right {
+  position: relative;
+  top: -40px;
+  left: -40px;
+  z-index: 20;
+  width: 400px;
+  height: 200px;
+  background: url("../img/history5.png") no-repeat;
+}
+.slide-wrap__center1 .center-left ul li {
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+
+  color: white;
+}
+.slide-wrap__center1 .center-left ul li:first-child {
+  margin-left: 595px;
+}
+.slide-wrap__center1 .center-left ul li:nth-child(2) {
+  margin-left: 130px;
+  margin-top: 30px;
+}
+.slide-wrap__bottom1 {
+  width: 100%;
+  height: 150px;
+}
+/* ------1972------ */
+.history .history-slide .slide .slide-wrap .slide-wrap__bottom1 .y1972 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.y1972-left {
+  margin-left: 30px;
+  width: 300px;
+  height: 100%;
+  background: url("../img/1972.png") no-repeat;
+}
+.y1972-right {
+  width: calc(100% - 35% - 330px);
+}
+.y1972-right p {
+  padding: 0 50px 0 30px;
+  text-align: justify;
+}
+.y1972-right img {
+  position: relative;
+  left: 600px;
+  bottom: 150px;
+}
+/* ----------------slide3 end  ---------------- */
+/* ---------------history end-------------------*/
+/* ---------------chef--------------------------*/
+.chef {
+  width: 100%;
+  height: 100vh;
+}
+.chef > h1 {
+  margin-left: -20px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #d5a01f;
+}
+.chef > p {
+  padding: 25px 0px;
+  font-size: 1rem;
+  text-align: justify;
+  color: #707070;
+}
+.chef__chefs {
+  width: 100%;
+  height: 290px;
+  background: url("../img/chefs.png") center/cover no-repeat;
+}
+.chef__container {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.chef__container .card {
+  cursor: pointer;
+  position: relative;
+  max-width: 350px;
+  height: 350px;
+  background: #fff;
+  margin: 0px 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.8s ease-in-out;
+  border-radius: 5px;
+}
+.chef__container .card:hover {
+  height: 600px;
+}
+.chef__container .card .imgbox {
+  position: relative;
+  top: -60px;
+  width: 300px;
+  height: 330px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.chef__container .card .imgbox img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.chef__container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.chef__container .card .content h2 {
+  color: #d5a01f;
+}
+.chef__container .card .content span {
+  font-size: 0.8rem;
+  color: #f3c21e;
+}
+.chef__container .card .content p {
+  font-size: 0.8rem;
+  color: #707070;
+  text-align: justify;
+}
+.chef__container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -20px;
+  transition: 0.3s;
+}
+/* ---------------chef end----------------------*/
+/* ---------------care--------------------------*/
+.care {
+  margin-top: 50px;
+  width: 100%;
+  height: 100vh;
+}
+.care > h1 {
+  margin: 0 0 50px -20px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #d5a01f;
+}
+.care__flex {
+  display: flex;
+
+  width: 100%;
+  height: 491px;
+}
+
+.care-left,
+.care-right2,
+.care-left3,
+.care-right4 {
+  width: 650px;
+  height: 100%;
+  background: url("../img/img-cares1.jpg") no-repeat;
+}
+.care-right,
+.care-left2,
+.care-right3,
+.care-left4 {
+  width: calc(100% - 650px);
+  height: 100%;
+}
+.care h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #d5a01f;
+}
+.care-right h2,
+.care-right3 h2 {
+  margin-left: 30px;
+}
+.care-right p,
+.care-right3 p {
+  padding: 20px 0 0 30px;
+  text-align: justify;
+}
+.care-right2 {
+  background: url("../img/img-cares2.jpg") no-repeat;
+}
+.care-left3 {
+  background: url("../img/img-cares3.jpg") no-repeat;
+}
+.care-right4 {
+  background: url("../img/img-cares4.jpg") no-repeat;
+}
+
+.care-left4 p {
+  padding: 20px 30px 0 0;
+}
+.care-left2 p {
+  text-align: justify;
+  padding: 20px 30px 0 0;
+}
+/* ---------------care end----------------------*/
+
+/* ---------------ABOUT GODIVA END--------------*/
+
+/* ---------------footer------------------------*/
+footer {
+  z-index: 999;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+.footer__line {
+  z-index: 1000;
+
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #f2e0a2, #d5a01f, #f3c21e);
+}
